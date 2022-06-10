@@ -75,5 +75,10 @@ class Dosen extends CI_Controller{
         $this->dosen->delete($data_dosen);
         redirect('dosen','refresh');
     }
+    public function upload(){
+        $_iddosen=$this->input->post("iddosen");
+        $this->load->model('dosen_model', 'dosen');
+        $dosen = $this->
+    }
 }
 ?>
